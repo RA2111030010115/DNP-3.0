@@ -11,7 +11,7 @@ public class Consumer extends Thread {
             for (int i = 0; i < 20; i++) {
                 int data = queue.remove();
                 System.out.println("Consumed: " + data);
-                Thread.sleep(150); // Simulate time taken to consume
+                Thread.sleep(150); 
             }
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();

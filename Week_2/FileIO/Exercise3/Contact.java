@@ -15,7 +15,7 @@ public class Contact implements Serializable {
         this.email = email;
     }
 
-    // Getters and setters
+    
     public int getId() {
         return id;
     }

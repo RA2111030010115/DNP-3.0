@@ -3,7 +3,7 @@ public class BankAccountTest {
     public static void main(String[] args) {
         BankAccount account = new BankAccount(1000);
 
-        // Create multiple transaction threads
+        
         Transaction deposit1 = new Transaction(account, true, 500);
         Transaction withdraw1 = new Transaction(account, false, 200);
         Transaction deposit2 = new Transaction(account, true, 100);

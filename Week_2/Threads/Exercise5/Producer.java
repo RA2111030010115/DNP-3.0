@@ -11,7 +11,7 @@ public class Producer extends Thread {
             for (int i = 0; i < 20; i++) {
                 queue.add(i);
                 System.out.println("Produced: " + i);
-                Thread.sleep(100); // Simulate time taken to produce
+                Thread.sleep(100); 
             }
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();

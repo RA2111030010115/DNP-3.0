@@ -10,13 +10,10 @@ public class OrderProcessing {
         orders.add(new Order(3, "Charlie", 300.0, "NEW"));
         orders.add(new Order(4, "David", 100.0, "NEW"));
 
-        // Implement OrderFilter using lambda expression
         OrderFilter highValueOrderFilter = order -> order.orderAmount > 200.0;
 
-        // Implement OrderProcessor using lambda expression
         OrderProcessor markAsProcessed = order -> order.status = "PROCESSED";
 
-        // Filter and process orders
         List<Order> filteredOrders = filterOrders(orders, highValueOrderFilter);
         System.out.println("Filtered Orders:");
         filteredOrders.forEach(System.out::println);

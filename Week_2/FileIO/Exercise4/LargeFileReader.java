@@ -7,7 +7,7 @@ class LargeFileReader {
         try (BufferedReader reader = new BufferedReader(new FileReader(inputFileName))) {
             String line;
             while ((line = reader.readLine()) != null) {
-                // Process each line (for demonstration, we will just print the line)
+                
                 System.out.println(line);
             }
         } catch (IOException e) {

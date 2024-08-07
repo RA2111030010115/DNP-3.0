@@ -15,13 +15,13 @@ public class StudentGradesTest {
             System.out.println("5. Exit");
             System.out.print("Enter your choice: ");
             choice = scanner.nextInt();
-            scanner.nextLine();  // Consume newline
+            scanner.nextLine();  
 
             switch (choice) {
                 case 1:
                     System.out.print("Enter Student ID: ");
                     int id = scanner.nextInt();
-                    scanner.nextLine();  // Consume newline
+                    scanner.nextLine();  
 
                     System.out.print("Enter Student Name: ");
                     String name = scanner.nextLine();
@@ -42,7 +42,7 @@ public class StudentGradesTest {
                 case 3:
                     System.out.print("Enter Student ID to update grade: ");
                     int updateId = scanner.nextInt();
-                    scanner.nextLine();  // Consume newline
+                    scanner.nextLine(); 
 
                     System.out.print("Enter New Grade (A-F): ");
                     char newGrade = scanner.nextLine().charAt(0);

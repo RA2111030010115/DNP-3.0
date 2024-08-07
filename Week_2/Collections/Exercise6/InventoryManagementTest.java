@@ -13,25 +13,24 @@ public class InventoryManagementTest {
             System.out.println("5. Exit");
             System.out.print("Choose an option: ");
             int choice = scanner.nextInt();
-            scanner.nextLine(); // consume the newline
-
+            scanner.nextLine(); 
             switch (choice) {
                 case 1:
                     System.out.print("Enter Product ID: ");
                     int id = scanner.nextInt();
-                    scanner.nextLine(); // consume the newline
+                    scanner.nextLine();
                     System.out.print("Enter Product Name: ");
                     String name = scanner.nextLine();
                     System.out.print("Enter Product Quantity: ");
                     int quantity = scanner.nextInt();
-                    scanner.nextLine(); // consume the newline
+                    scanner.nextLine(); 
                     Product product = new Product(id, name, quantity);
                     inventoryManagement.addProduct(product);
                     break;
                 case 2:
                     System.out.print("Enter Product ID to Remove: ");
                     int removeId = scanner.nextInt();
-                    scanner.nextLine(); // consume the newline
+                    scanner.nextLine(); 
                     inventoryManagement.removeProduct(removeId);
                     break;
                 case 3:
@@ -39,7 +38,7 @@ public class InventoryManagementTest {
                     int updateId = scanner.nextInt();
                     System.out.print("Enter New Quantity: ");
                     int newQuantity = scanner.nextInt();
-                    scanner.nextLine(); // consume the newline
+                    scanner.nextLine(); 
                     inventoryManagement.updateProductQuantity(updateId, newQuantity);
                     break;
                 case 4:

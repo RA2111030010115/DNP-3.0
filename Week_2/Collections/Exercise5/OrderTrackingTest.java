@@ -12,13 +12,13 @@ public class OrderTrackingTest {
             System.out.println("4. Exit");
             System.out.print("Choose an option: ");
             int choice = scanner.nextInt();
-            scanner.nextLine(); // consume the newline
+            scanner.nextLine(); 
 
             switch (choice) {
                 case 1:
                     System.out.print("Enter Order ID: ");
                     int orderId = scanner.nextInt();
-                    scanner.nextLine(); // consume the newline
+                    scanner.nextLine(); 
                     System.out.print("Enter Order Details: ");
                     String orderDetails = scanner.nextLine();
                     Order order = new Order(orderId, orderDetails);

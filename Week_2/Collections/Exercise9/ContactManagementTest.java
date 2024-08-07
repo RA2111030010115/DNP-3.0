@@ -14,13 +14,13 @@ public class ContactManagementTest {
             System.out.println("4. Exit");
             System.out.print("Enter your choice: ");
             choice = scanner.nextInt();
-            scanner.nextLine();  // Consume newline
+            scanner.nextLine();  
 
             switch (choice) {
                 case 1:
                     System.out.print("Enter Contact ID: ");
                     int id = scanner.nextInt();
-                    scanner.nextLine();  // Consume newline
+                    scanner.nextLine();  
 
                     System.out.print("Enter Contact Name: ");
                     String name = scanner.nextLine();

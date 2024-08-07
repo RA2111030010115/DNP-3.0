@@ -13,7 +13,7 @@ public class FeedbackProcessing {
             new Feedback(5, "Eve", 5, "Loved it!")
         );
 
-        // Filter feedback based on a minimum rating
+        
         List<Feedback> filteredFeedback = feedbackList.stream()
                 .filter(fb -> fb.getRating() >= 4)
                 .collect(Collectors.toList());
@@ -21,7 +21,7 @@ public class FeedbackProcessing {
         System.out.println("Filtered Feedback:");
         filteredFeedback.forEach(System.out::println);
 
-        // Map feedback to extract customer names and comments
+        
         List<String> customerComments = filteredFeedback.stream()
                 .map(fb -> fb.getCustomerName() + ": " + fb.getComments())
                 .collect(Collectors.toList());
@@ -29,7 +29,7 @@ public class FeedbackProcessing {
         System.out.println("\nCustomer Comments:");
         customerComments.forEach(System.out::println);
 
-        // Reduce feedback to count the number of positive and negative feedbacks
+        
         Map<String, Long> feedbackCount = feedbackList.stream()
                 .collect(Collectors.groupingBy(
                         fb -> fb.getRating() >= 4 ? "Positive" : "Negative", 
@@ -39,7 +39,7 @@ public class FeedbackProcessing {
         System.out.println("\nFeedback Count:");
         feedbackCount.forEach((key, count) -> System.out.println(key + ": " + count));
 
-        // Implement flexible processing
+        
         processFeedback(feedbackList, fb -> fb.getRating() >= 4, fb -> fb.setComments(fb.getComments() + " (Processed)"));
         
         System.out.println("\nProcessed Feedback:");

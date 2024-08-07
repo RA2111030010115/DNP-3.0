@@ -7,12 +7,12 @@ public class OrderTracking {
         orders = new LinkedList<>();
     }
 
-    // Method to add an order to the list
+    
     public void addOrder(Order order) {
         orders.add(order);
     }
 
-    // Method to process an order (FIFO)
+    
     public Order processOrder() {
         if (orders.isEmpty()) {
             System.out.println("No orders to process.");
@@ -21,7 +21,7 @@ public class OrderTracking {
         return orders.removeFirst();
     }
 
-    // Method to display all orders in the list
+    
     public void displayOrders() {
         if (orders.isEmpty()) {
             System.out.println("No orders to display.");

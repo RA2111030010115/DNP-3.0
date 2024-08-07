@@ -12,13 +12,13 @@ public class CustomerAccountsTest {
             System.out.println("4. Exit");
             System.out.print("Choose an option: ");
             int choice = scanner.nextInt();
-            scanner.nextLine(); // consume the newline
+            scanner.nextLine();
 
             switch (choice) {
                 case 1:
                     System.out.print("Enter Customer ID: ");
                     int id = scanner.nextInt();
-                    scanner.nextLine(); // consume the newline
+                    scanner.nextLine(); 
                     System.out.print("Enter Customer Name: ");
                     String name = scanner.nextLine();
                     System.out.print("Enter Customer Email: ");
@@ -29,7 +29,7 @@ public class CustomerAccountsTest {
                 case 2:
                     System.out.print("Enter Customer ID to Remove: ");
                     int removeId = scanner.nextInt();
-                    scanner.nextLine(); // consume the newline
+                    scanner.nextLine(); 
                     customerAccounts.removeCustomer(removeId);
                     break;
                 case 3:

@@ -15,7 +15,7 @@ public class BookCollectionTest {
 
             System.out.print("Enter your choice: ");
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Consume newline left-over
+            scanner.nextLine(); 
 
             switch (choice) {
                 case 1:
